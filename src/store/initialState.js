@@ -1,3 +1,6 @@
 export default {
-  count: 0,
+  login: {
+    info: null,
+    fetching: false,
+  },
 };
