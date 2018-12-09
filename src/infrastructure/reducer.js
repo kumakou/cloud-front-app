@@ -2,9 +2,20 @@ import * as types from "./types";
 import cloneDeep from "clone-deep";
 
 const reducers = {
-  [types.COUNT_UP](old_state, action){
+  [types.BEGIN_LOGIN_FETCH](old_state, action){
     const state = cloneDeep(old_state);
-    state.count++;
+    state.login.fetching = true;
+    return state;
+  },
+  [types.DONE_LOGIN_FETCH](old_state, action){
+    const state = cloneDeep(old_state);
+    state.login.info = action.info;
+    state.login.fetching = false;
+    return state;
+  },
+  [types.LOGOUT](old_state, action){
+    const state = cloneDeep(old_state);
+    state.login.info = null;
     return state;
   },
 };

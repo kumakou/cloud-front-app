@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import Counter from "./Counter";
+import CloudAppBar from "./CloudAppBar";
+import LoginDialog from "./LoginDialog";
 
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <div>
+        <CloudAppBar />
+        <LoginDialog />
+      </div>
     )
   }
 }

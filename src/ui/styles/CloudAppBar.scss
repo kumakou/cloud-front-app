@@ -1,0 +1,15 @@
+.app_bar{
+  .container{
+    display: flex;
+    justify-content: flex-start;
+
+    .user_info{
+      margin-left: $unit;
+    }
+
+    .logout_button{
+      margin-left: auto;
+    }
+  }
+}
+
