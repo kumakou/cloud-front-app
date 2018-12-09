@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as types from "../../infrastructure/types";
-import bindActionCreator from "../bindActionCreator";
+import * as types from "infrastructure/types";
+import bindActionCreator from "ui/bindActionCreator";
 
 class App extends Component {
   render() {

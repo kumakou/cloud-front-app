@@ -150,6 +150,10 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+      //my project alias
+      infrastructure: path.resolve(__dirname, "../src/infrastructure/"),
+      store: path.resolve(__dirname, "../src/store/"),
+      ui: path.resolve(__dirname, "../src/ui/"),
     },
     plugins: [
       // Adds support for installing with Plug'n'Play, leading to faster installs and adding
