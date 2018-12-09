@@ -1,4 +1,5 @@
 import "../node_modules/normalize.css/normalize.css";
+import "ui/styles/index.scss";
 
 import React from 'react';
 import ReactDOM from 'react-dom';
