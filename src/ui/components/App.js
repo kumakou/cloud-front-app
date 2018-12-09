@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as types from "../../infrastructure/types";
+import bindActionCreator from "../bindActionCreator";
 
 class App extends Component {
   render() {
     return (
       <div>
-        hello
+        <button onClick={() => bindActionCreator(types.COUNT_UP)}>
+          {this.props.count}
+        </button>
       </div>
     )
   }
 }
 
-export default App;
+export default connect(state => state)(App);
 
